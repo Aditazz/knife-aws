@@ -179,7 +179,7 @@ class Chef
           end
         end
         
-	output(format_list_for_display(server_list))
+	output(format_list_for_display(connection.servers))
         #puts ui.list(server_list, :uneven_columns_across, output_column_count)
 
       end
