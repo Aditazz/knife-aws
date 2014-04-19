@@ -43,7 +43,7 @@ class Chef
           vpcs_list << vpc.cidr_block
           vpcs_list << vpc.dhcp_options_id
           vpcs_list << vpc.tenancy
-          vpcs_list << vpc.tags.to_s
+          vpcs_list << vpc.tags.values.join(',')
         end
         puts ui.list(vpcs_list, :columns_across, 6)
       end
