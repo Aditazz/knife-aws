@@ -38,12 +38,12 @@ class Chef
           ui.color('Tags', :bold)
         ]
         connection.vpcs.sort_by(&:id).each do |vpc|
-          vpcs_list << vpc.id.to_s
-          vpcs_list << vpc.state.to_s
-          vpcs_list << vpc.cidr_block.to_s
+          vpcs_list << vpc.id
+          vpcs_list << vpc.state
+          vpcs_list << vpc.cidr_block
           vpcs_list << vpc.dhcp_options_id
-          vpcs_list << vpc.tenancy.to_s
-          vpcs_list << vpc.tags.to_s
+          vpcs_list << vpc.tenancy
+          vpcs_list << vpc.tags.join(",")
         end
         puts ui.list(vpcs_list, :columns_across, 6)
       end
