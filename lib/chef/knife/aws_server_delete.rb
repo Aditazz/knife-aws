@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-require 'chef/knife/ec2_base'
+require 'chef/knife/aws_base'
 
 # These two are needed for the '--purge' deletion case
 require 'chef/node'

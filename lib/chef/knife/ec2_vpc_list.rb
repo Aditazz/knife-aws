@@ -19,9 +19,9 @@ require 'chef/knife/aws_base'
 
 class Chef
   class Knife
-    class AwsVpcList < Knife
+    class Ec2VpcList < Knife
 
-      include Knife::AwsBase
+      include Knife::Ec2Base
 
       banner "knife ec2 vpcs list (options)"
 
