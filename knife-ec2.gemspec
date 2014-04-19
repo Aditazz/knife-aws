@@ -5,8 +5,8 @@ require 'knife-ec2/version'
 Gem::Specification.new do |s|
   s.name         = 'knife-ec2'
   s.version      = Knife::Ec2::VERSION
-  s.authors      = ['Adam Jacob', 'Seth Chisamore']
-  s.email        = ['adam@opscode.com', 'schisamo@opscode.com']
+  s.authors      = ['Adam Jacob', 'Seth Chisamore', 'Charles Gardner']
+  s.email        = ['adam@opscode.com', 'schisamo@opscode.com', 'cgardner2020@gmail.com']
   s.homepage     = 'https://github.com/opscode/knife-ec2'
   s.summary      = %q{EC2 Support for Chef's Knife Command}
   s.description  = s.summary

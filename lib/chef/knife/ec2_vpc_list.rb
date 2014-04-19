@@ -23,7 +23,7 @@ class Chef
 
       include Knife::Ec2Base
 
-      banner "knife aws vpcs list (options)"
+      banner "knife ec2 vpcs list (options)"
 
       def run
 
