@@ -25,7 +25,7 @@ class Chef
 
       include Knife::AwsBase
 
-      banner "knife ec2 server list (options)"
+      banner "knife aws server list (options)"
 
       option :name,
         :short => "-n",

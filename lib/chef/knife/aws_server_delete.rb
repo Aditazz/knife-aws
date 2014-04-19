@@ -29,7 +29,7 @@ class Chef
 
       include Knife::AwsBase
 
-      banner "knife ec2 server delete SERVER [SERVER] (options)"
+      banner "knife aws server delete SERVER [SERVER] (options)"
 
       attr_reader :server
 

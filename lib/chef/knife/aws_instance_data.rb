@@ -26,7 +26,7 @@ class Chef
         require 'chef/json_compat'
       end
 
-      banner "knife ec2 instance data (options)"
+      banner "knife aws instance data (options)"
 
       option :edit,
         :short => "-e",

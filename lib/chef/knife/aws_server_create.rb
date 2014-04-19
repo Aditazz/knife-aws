@@ -34,7 +34,7 @@ class Chef
         Chef::Knife::Bootstrap.load_deps
       end
 
-      banner "knife ec2 server create (options)"
+      banner "knife aws server create (options)"
 
       attr_accessor :initial_sleep_delay
       attr_reader :server
