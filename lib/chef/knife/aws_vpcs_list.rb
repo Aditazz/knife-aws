@@ -19,7 +19,7 @@ require 'chef/knife/aws_base'
 
 class Chef
   class Knife
-    class AwsVpcList < Knife
+    class AwsVpcsList < Knife
 
       include Knife::AwsBase
 
