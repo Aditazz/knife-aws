@@ -23,7 +23,7 @@ class Chef
 
       include Knife::Ec2Base
 
-      banner "knife ec2 vpcs list (options)"
+      banner "knife aws vpcs list (options)"
 
       def run
 
@@ -43,7 +43,7 @@ class Chef
           vpcs_list << vpc.cidr_block
           vpcs_list << vpc.dhcp_options_id
           vpcs_list << vpc.tenancy
-          vpcs_list << vpc.tags.join(",")
+          vpcs_list << vpc.tags.to_s
         end
         puts ui.list(vpcs_list, :columns_across, 6)
       end
