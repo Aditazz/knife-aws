@@ -22,9 +22,9 @@ require 'chef/knife/winrm_base'
 
 class Chef
   class Knife
-    class Ec2ServerCreate < Knife
+    class AwsServerCreate < Knife
 
-      include Knife::Ec2Base
+      include Knife::AwsBase
       include Knife::WinrmBase
       deps do
         require 'fog'

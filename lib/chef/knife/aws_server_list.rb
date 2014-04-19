@@ -21,9 +21,9 @@ require 'chef/knife/ec2_base'
 
 class Chef
   class Knife
-    class Ec2ServerList < Knife
+    class AwsServerList < Knife
 
-      include Knife::Ec2Base
+      include Knife::AwsBase
 
       banner "knife ec2 server list (options)"
 

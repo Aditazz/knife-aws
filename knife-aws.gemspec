@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path('../lib', __FILE__)
-require 'knife-ec2/version'
+require 'knife-aws/version'
 
 Gem::Specification.new do |s|
-  s.name         = 'knife-ec2'
-  s.version      = Knife::Ec2::VERSION
+  s.name         = 'knife-aws'
+  s.version      = Knife::Aws::VERSION
   s.authors      = ['Adam Jacob', 'Seth Chisamore', 'Charles Gardner']
   s.email        = ['adam@opscode.com', 'schisamo@opscode.com', 'cgardner2020@gmail.com']
-  s.homepage     = 'https://github.com/opscode/knife-ec2'
-  s.summary      = %q{EC2 Support for Chef's Knife Command}
+  s.homepage     = 'https://github.com/Aditazz/knife-aws'
+  s.summary      = %q{AWS Support for Chef's Knife Command}
   s.description  = s.summary
   s.license      = 'Apache 2.0'
 

@@ -25,9 +25,9 @@ require 'chef/api_client'
 
 class Chef
   class Knife
-    class Ec2ServerDelete < Knife
+    class AwsServerDelete < Knife
 
-      include Knife::Ec2Base
+      include Knife::AwsBase
 
       banner "knife ec2 server delete SERVER [SERVER] (options)"
 

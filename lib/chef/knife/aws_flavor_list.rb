@@ -20,11 +20,11 @@ require 'chef/knife/ec2_base'
 
 class Chef
   class Knife
-    class Ec2FlavorList < Knife
+    class AwsFlavorList < Knife
 
-      include Knife::Ec2Base
+      include Knife::AwsBase
 
-      banner "knife ec2 flavor list (options)"
+      banner "knife aws flavor list (options)"
 
       def run
 
