@@ -46,7 +46,7 @@ class Chef
           ui.color('Root Device Name', :bold),
           ui.color('Tags', :bold)
         ]	
-        connection.images.sort_by(&:id).each do |image|
+        connection.images.all(options).sort_by(&:id).each do |image|
           images_list << image.id
           images_list << image.architecture.to_s
           images_list << image.block_device_mapping.to_s
