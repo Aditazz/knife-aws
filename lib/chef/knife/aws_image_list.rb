@@ -49,7 +49,7 @@ class Chef
         connection.images.sort_by(&:id).each do |image|
           images_list << image.id
           images_list << image.architecture.to_s
-          i#mages_list << image.block_device_mapping.to_s
+          #images_list << image.block_device_mapping.to_s
           images_list << image.location.to_s
           #images_list << image.owner_id.to_s
           #images_list << image.state.to_s
