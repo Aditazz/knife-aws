@@ -47,16 +47,16 @@ class Chef
           ui.color('Tags', :bold)
         ]	
         connection.images.sort_by(&:id).each do |image|
-          images_list << image.id.to_s
-          images_list << image.architecture.to_s
+          images_list << image.id.strip
+          images_list << image.architecture.strip
           #images_list << image.block_device_mapping.to_s
-          images_list << image.location.to_s
+          images_list << image.location.strip
           #images_list << image.owner_id.to_s
           #images_list << image.state.to_s
-          images_list << image.type.to_s
+          images_list << image.type.strip
           #images_list << image.is_public.to_s
           #images_list << image.kernel_id.to_s
-          images_list << image.platform.to_s
+          images_list << image.platform.strip
           #images_list << image.product_codes.to_s
           #images_list << image.ramdisk_id.to_s
           #images_list << image.root_device_type.to_s
