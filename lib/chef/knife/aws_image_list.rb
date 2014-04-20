@@ -33,7 +33,7 @@ class Chef
           ui.color('Image Id', :bold),
           ui.color('Architecture', :bold),
           #ui.color('Block Device Mapping', :bold),
-          ui.color('Location', :bold),
+          #ui.color('Location', :bold),
           #ui.color('Owner Id', :bold),
           #ui.color('State', :bold),
           ui.color('Type', :bold),
@@ -50,7 +50,7 @@ class Chef
           images_list << image.id.to_s.strip
           images_list << image.architecture.to_s.strip
           #images_list << image.block_device_mapping.to_s
-          images_list << image.location.to_s.strip
+          #images_list << image.location.to_s.strip
           #images_list << image.owner_id.to_s
           #images_list << image.state.to_s
           images_list << image.type.to_s.strip
