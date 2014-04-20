@@ -32,38 +32,38 @@ class Chef
         images_list = [
           ui.color('Image Id', :bold),
           ui.color('Architecture', :bold),
-          ui.color('Block Device Mapping', :bold),
+          #ui.color('Block Device Mapping', :bold),
           ui.color('Location', :bold),
-          ui.color('Owner Id', :bold),
-          ui.color('State', :bold),
+          #ui.color('Owner Id', :bold),
+          #ui.color('State', :bold),
           ui.color('Type', :bold),
-          ui.color('Is Public', :bold),
-          ui.color('Kernel Id', :bold),
+          #ui.color('Is Public', :bold),
+          #ui.color('Kernel Id', :bold),
           ui.color('Platform', :bold),
-          ui.color('Product Codes', :bold),
-          ui.color('Ramdisk Id', :bold),
-          ui.color('Root Device Type', :bold),
-          ui.color('Root Device Name', :bold),
+          #ui.color('Product Codes', :bold),
+          #ui.color('Ramdisk Id', :bold),
+          #ui.color('Root Device Type', :bold),
+          #ui.color('Root Device Name', :bold),
           ui.color('Tags', :bold)
         ]	
-        connection.images.all(options).sort_by(&:id).each do |image|
+        connection.images.sort_by(&:id).each do |image|
           images_list << image.id
           images_list << image.architecture.to_s
-          images_list << image.block_device_mapping.to_s
+          i#mages_list << image.block_device_mapping.to_s
           images_list << image.location.to_s
-          images_list << image.owner_id.to_s
-          images_list << image.state.to_s
+          #images_list << image.owner_id.to_s
+          #images_list << image.state.to_s
           images_list << image.type.to_s
-          images_list << image.is_public.to_s
-          images_list << image.kernel_id.to_s
+          #images_list << image.is_public.to_s
+          #images_list << image.kernel_id.to_s
           images_list << image.platform.to_s
-          images_list << image.product_codes.to_s
-          images_list << image.ramdisk_id.to_s
-          images_list << image.root_device_type.to_s
-          images_list << image.root_device_name.to_s
+          #images_list << image.product_codes.to_s
+          #images_list << image.ramdisk_id.to_s
+          #images_list << image.root_device_type.to_s
+          #images_list << image.root_device_name.to_s
           images_list << image.tags.values.join(',')
         end
-        puts ui.list(images_list, :columns_across, 15)
+        puts ui.list(images_list, :columns_across, 6)
       end
     end
   end
